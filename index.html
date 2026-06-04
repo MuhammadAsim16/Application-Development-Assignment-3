@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salah Tracker</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <button id="themeToggle">🌙</button>
+
+    <div class="logo">
+      ☪
+    </div>
+
+    <h1>Salah Tracker</h1>
+
+    <p class="subtitle">
+      Track your daily prayers peacefully
+    </p>
+
+    <p class="date" id="date"></p>
+
+    <!-- Progress -->
+
+    <div class="progress-box">
+
+      <div class="progress-top">
+        <span>Progress Today</span>
+        <span id="progressCount">0 / 5</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+    </div>
+
+    <!-- Fajr -->
+
+    <div class="prayer-card fajr-card">
+
+      <div>
+        <h2>Fajr</h2>
+        <span>5:10 AM</span>
+      </div>
+
+      <div class="right-side">
+        <input type="checkbox" class="check">
+
+        <p class="status pending">
+          Pending ⏳
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Dhuhr -->
+
+    <div class="prayer-card dhuhr-card">
+
+      <div>
+        <h2>Dhuhr</h2>
+        <span>1:15 PM</span>
+      </div>
+
+      <div class="right-side">
+        <input type="checkbox" class="check">
+
+        <p class="status pending">
+          Pending ⏳
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Asr -->
+
+    <div class="prayer-card asr-card">
+
+      <div>
+        <h2>Asr</h2>
+        <span>4:45 PM</span>
+      </div>
+
+      <div class="right-side">
+        <input type="checkbox" class="check">
+
+        <p class="status pending">
+          Pending ⏳
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Maghrib -->
+
+    <div class="prayer-card maghrib-card">
+
+      <div>
+        <h2>Maghrib</h2>
+        <span>6:58 PM</span>
+      </div>
+
+      <div class="right-side">
+        <input type="checkbox" class="check">
+
+        <p class="status pending">
+          Pending ⏳
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Isha -->
+
+    <div class="prayer-card isha-card">
+
+      <div>
+        <h2>Isha</h2>
+        <span>8:20 PM</span>
+      </div>
+
+      <div class="right-side">
+        <input type="checkbox" class="check">
+
+        <p class="status pending">
+          Pending ⏳
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Result Circle -->
+
+    <div class="result-box">
+
+      <div class="circle">
+
+        <div class="inner-circle">
+          <span id="percentage">0%</span>
+        </div>
+
+      </div>
+
+      <p class="result-text">
+        Daily Prayer Completion
+      </p>
+
+    </div>
+
+    <!-- Done Button -->
+
+    <button id="doneBtn">
+      Done For Today ✨
+    </button>
+
+    <!-- Message -->
+
+    <div id="messageBox">
+
+      <h2>Alhamdulillah 🤍</h2>
+
+      <p>
+        Every prayer you completed today brought you closer to peace, discipline, and Allah.
+        Small consistent acts create the strongest hearts.
+        Tomorrow is another chance to grow even better.
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
